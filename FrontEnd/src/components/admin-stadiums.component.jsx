@@ -22,7 +22,7 @@ export const AdminViewStadiums = () => {
     }, []);
 
     const deleteStadium = (id) => {
-        axios.delete(`http://localhost:3030/stadium/${id}/delete`)
+        axios.delete(`http://localhost:3030/api/v1/stadium/${id}/delete`)
             .then(res => {
                 console.log(res);
                 getStadiums();
